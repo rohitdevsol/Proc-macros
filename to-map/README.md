@@ -1,6 +1,6 @@
 # AST for the to map macro
 
-```
+```rs
 DeriveInput {
     attrs: [],
     vis: Visibility::Inherited,

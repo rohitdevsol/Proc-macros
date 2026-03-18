@@ -1,6 +1,6 @@
 # AST generated for the diff macro
 
-```
+```rs
 DeriveInput {
     attrs: [],
     vis: Visibility::Inherited,

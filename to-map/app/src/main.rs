@@ -1,8 +1,8 @@
-use macros::ToMap;
+use macros::{ FromMap, ToMap };
 use std::collections::HashMap;
-use traits::ToMap;
+use traits::{ ToMap, FromMap };
 
-#[derive(Debug, ToMap)]
+#[derive(Debug, ToMap, FromMap)]
 struct Person {
     name: String,
     age: i32,
@@ -10,20 +10,23 @@ struct Person {
 
 fn main() {
     let person = Person {
-        name: String::from("usashi"),
-        age: 34,
+        name: String::from("bri"),
+        age: 28,
     };
-    println!("{:?}", person);
+    // println!("{:?}", person);
 
     // let mut person_hashmap = HashMap::new();
     // person_hashmap.insert("name", person.name);
     // person_hashmap.insert("age", person.age.to_string());
 
-    // let mut person_hashmap = person.to_map(); // after building my macro
+    let person_hashmap = person.to_map(); // after building my macro
 
-    println!("{:?}", person);
+    println!("{:?}", person_hashmap);
+
+    let from_map_struct = Person::from_map(person_hashmap);
+    println!("{:?}", from_map_struct);
 }
 
 // what do we want ?
 // person.to_map();
-// {"name": "usashi", "age": "34"}
+// {"name": "bri", "age": "34"}

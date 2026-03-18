@@ -1,1 +1,0 @@
-/Users/subh/Desktop/code-playground/proc-macros/diff-macro/target/debug/libmacros.dylib: /Users/subh/Desktop/code-playground/proc-macros/diff-macro/macros/src/lib.rs /Users/subh/Desktop/code-playground/proc-macros/diff-macro/traits/src/lib.rs
