@@ -6,8 +6,8 @@ This repository contains a collection of Rust procedural macro implementations d
 
 The codebase is organized into multiple independent modules, each focusing on a specific procedural macro implementation.
 
-* json-macro: A custom derive macro for JSON serialization.
-* diff-macro: A planned implementation for structural diffing.
+- json-macro: A custom derive macro for JSON serialization.
+- diff-macro: A planned implementation for structural diffing.
 
 ## JSON Macro Implementation
 
@@ -18,6 +18,16 @@ The json-macro module provides a ToJson derive macro that automatically implemen
 1. traits: Defines the JsonSerialize trait, which specifies the to_json method.
 2. macros: Contains the procedural macro logic using syn and quote.
 3. app: A demonstration package showing how to apply the macro to a struct.
+
+## Development Commands
+
+Run individual projects:
+
+```bash
+make run-diff
+make run-json
+make run-map
+```
 
 ### Usage Example
 
@@ -48,9 +58,9 @@ fn main() {
 
 The macros utilize the following core technologies:
 
-* syn: Used for parsing Rust code into an Abstract Syntax Tree (AST).
-* quote: Used for turning AST nodes back into Rust source code.
-* proc_macro: The standard library crate for procedural macros.
+- syn: Used for parsing Rust code into an Abstract Syntax Tree (AST).
+- quote: Used for turning AST nodes back into Rust source code.
+- proc_macro: The standard library crate for procedural macros.
 
 ## Development Status
 

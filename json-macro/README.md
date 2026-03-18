@@ -1,6 +1,6 @@
 # Generated AST for the Person struct
 
-```
+```rs
 DeriveInput {
     attrs: [],
     vis: Visibility::Inherited,

@@ -1,5 +1,0 @@
-warning: /Users/subh/Desktop/code-playground/proc-macros/diff-macro/macros/Cargo.toml: library `macros` should only specify `proc-macro = true` instead of setting `crate-type`
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
